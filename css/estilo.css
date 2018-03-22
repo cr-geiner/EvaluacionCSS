@@ -1,0 +1,184 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #02010a;
+	font-family: 'Dancing Script', cursive;
+	font-size: 16px
+	
+}
+
+.contenido {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/*header nav*/
+
+header {
+	background: #5b7989;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+}
+
+header h1 {
+	color: white;
+	padding-left: 15px;
+	padding-top: 10px;
+	font-size: 2.5rem;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+.menu_nav {
+	float: right;
+	position: relative;
+	bottom: 30px;
+	right: 10px;
+}
+
+nav li{
+	list-style: none;
+	display: inline-block;
+}
+
+nav li a {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: normal;
+	padding: 20px 10px;
+}
+
+nav li a [href="#"] {
+	text-decoration: none;
+}
+
+/*imagenes y principal*/
+
+img {
+	display: inline-block;
+	margin: 0 auto;
+	box-shadow: 2px 2px 3px #02010a;
+}
+
+.feature {
+	height: 520px;
+	background-color: #82c3a6;
+	display: flex;
+	align-items: center;
+}
+
+.feature img {
+	width: 70%;
+}
+
+/*imagenes secundarias 1y2*/
+.main {
+	overflow: hidden;
+}
+
+.galeria {
+	background: #d5c75f;
+	width: 33.33%;
+	height: 300px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-align: center; 
+}
+
+.galeria img {
+	width: 90%
+}
+
+.second1, .second2 {
+	background: #d5c75f;
+	width: 50%;
+	height: 300px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-align: center; 
+}
+
+.second1 img, .second2 img {
+	width: 70%;
+}
+
+.second1 a, .second2 a {
+	display: inline-block;
+	color: #000;
+}
+
+/*Area de footer con 4 columnas*/
+
+.column1, .column2, .column3, .column4 {
+	background-color: #C6d5c5;
+	box-sizing: border-box;
+	padding: 20px;
+	width: 25%;
+	height: 200px;
+	float: left;
+}
+
+.column1 h3, .column2 h3, .column3 h3, .column4 h3 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.column1 p, .column2 p, .column3 p, .column4 p {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.column1 {
+	border-radius: 0 0 0 10px;
+}
+
+.column1 a, .column2 a {
+	text-decoration: none;
+}
+
+.column3 li {
+	list-style: none;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.column3 li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.column4 {
+	border-radius: 0 0 10px 0;
+}
+
+/*estilos y colores de los iconos de font-awesome 
+para las redes sociales en columna 3*/
+
+.fa-facebook {
+	color: #3b5998;
+}
+
+.fa-twitter-square {
+	color: #00aced;
+}
+
+.fa-instagram {
+	display: inline;
+	height: 0.9em;
+	border-radius: 25%;
+	color: #C6d5c5;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	box-shadow: 0px 3px 5px rgba(0,0,0,.10);
+}
+
+.fa-youtube {
+	color: #c4302b;
+}
