@@ -5,9 +5,19 @@
 body {
 	background: #02010a;
 	font-family: 'Dancing Script', cursive;
-	font-size: 16px
-	
+	font-size: 16px	
 }
+
+/*media queries */
+
+@media screen (max-width: 899px) {
+	.contenido {
+		width: 100%
+		margin: 0 auto;
+	}
+}
+
+/*hasta aqui media query*/
 
 .contenido {
 	width: 900px;
@@ -49,7 +59,7 @@ nav li a {
 	padding: 20px 10px;
 }
 
-nav li a [href="#"] {
+a [href="#"] {
 	text-decoration: none;
 }
 
