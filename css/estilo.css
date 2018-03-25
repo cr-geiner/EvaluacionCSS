@@ -8,16 +8,6 @@ body {
 	font-size: 16px	
 }
 
-/*media queries */
-
-@media screen (max-width: 899px) {
-	.contenido {
-		width: 100%
-		margin: 0 auto;
-	}
-}
-
-/*hasta aqui media query*/
 
 .contenido {
 	width: 900px;
@@ -87,16 +77,29 @@ img {
 	overflow: hidden;
 }
 
-.galeria {
+.paisajes {
 	background: #d5c75f;
 	width: 33.33%;
-	height: 300px;
+	height: 250px;
 	box-sizing: border-box;
 	float: left;
 	position: relative;
 	display: flex;
 	align-items: center;
 	text-align: center; 
+}
+
+.retratos{
+	background: #d5c75f;
+	width: 33.33%;
+	height: 440px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-align: center; 
+	padding: 15px 0;
 }
 
 .galeria img {
@@ -106,7 +109,7 @@ img {
 .second1, .second2 {
 	background: #d5c75f;
 	width: 50%;
-	height: 300px;
+	height: 460px;
 	box-sizing: border-box;
 	float: left;
 	position: relative;
@@ -115,8 +118,12 @@ img {
 	text-align: center; 
 }
 
-.second1 img, .second2 img {
-	width: 70%;
+.second1 img {
+	width: 90%;
+}
+
+.second2 img {
+	width: 55%;
 }
 
 .second1 a, .second2 a {
@@ -192,3 +199,101 @@ para las redes sociales en columna 3*/
 .fa-youtube {
 	color: #c4302b;
 }
+
+/*media queries */
+
+@media (max-width: 900px) {
+	header {
+		height: auto;
+		border-radius: 25px 25px 0 0;
+	}
+
+	header h1 {
+		text-align: center;
+	}
+
+	.contenido {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.menu_nav {
+		position: static;
+		float: left;
+		padding-bottom: 10px;
+	}
+
+	nav li {
+		display: block;
+		padding: 5px 15px;
+		padding-top: 10px; 
+	}
+
+	.feature {
+		height: auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.main a {
+		width: 100%;
+	}
+	
+
+	.galeria {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.galeria img {
+		width: 70%;
+		margin: 15px;
+	}
+
+	.paisajes1, .retratos1 {
+		padding-top: 15px;
+	}
+
+	.paisajes6, .retratos6 {
+		padding-bottom: 15px;
+	}
+
+	.second1, .second2 {
+		width: 100%;
+		height: auto;
+		display: block;
+		padding: 15px 0;
+		font-size: 1.2rem;
+	}
+
+	.second2 {
+		padding-bottom: 30px;
+	}
+
+	.second1 img{
+		margin-top: 15px;
+	}
+
+	.second1 img, .second2 img {
+		margin-bottom: 10px;
+	}
+
+	.column1, .column2, .column3, .column4 {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	.column1 {
+		border-radius: 0 0 0 0px;
+	}
+
+	.column4 {
+		border-radius: 0 0 25px 25px;
+	}
+}
+
+/*hasta aqui media query*/
