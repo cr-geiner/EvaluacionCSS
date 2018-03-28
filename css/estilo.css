@@ -14,7 +14,7 @@ body {
 	margin: 0 auto;
 }
 
-/*header nav*/
+/*header*/
 
 header {
 	background: #5b7989;
@@ -22,7 +22,7 @@ header {
 	overflow: hidden;
 }
 
-header h1 {
+header h1 {  /* texto de encabezado*/
 	color: white;
 	padding-left: 15px;
 	padding-top: 10px;
@@ -30,6 +30,10 @@ header h1 {
 	text-shadow: 2px 2px 2px #02010a;
 	animation: encabezado-anim 3s;
 }
+
+/*Animacion del encabezado (h1) hace un efecto "slide-in". 
+Consegui el efecto a el texto del h1 solamente, 
+no al la pagina entera como en el video de muestra.*/
 
 @-webkit-keyframes encabezado-anim {
  	0% {
@@ -96,6 +100,8 @@ header h1 {
  	}
  } 
 
+/*menu de navegacion*/
+
 .menu_nav {
 	float: right;
 	position: relative;
@@ -115,12 +121,12 @@ nav li a {
 	font-weight: normal;
 }
 
-nav li a [href="#"] {
+/*pagina actual sin subrayado*/
+.actual {
 	text-decoration: none;
-} 
+}
 
-
-/*imagenes y principal*/
+/*imagenes */
 
 img {
 	display: inline-block;
@@ -142,47 +148,6 @@ img {
 /*imagenes secundarias 1y2*/
 .main {
 	overflow: hidden;
-}
-
-.paisajes {
-	background: #d5c75f;
-	width: 33.33%;
-	height: 250px;
-	box-sizing: border-box;
-	float: left;
-	position: relative;
-	display: flex;
-	align-items: center;
-	text-align: center; 
-}
-
-.land1, .portrait1 {
-	filter: blur(10px);
-}
-
-.land2, .land4, .land6, .portrait2, .portrait4, .portrait6 {
-	filter: grayscale(100%);
-}
-
-.land3, .portrait3 {
-	filter: sepia(90%);
-}
-
-.retratos{
-	background: #d5c75f;
-	width: 33.33%;
-	height: 440px;
-	box-sizing: border-box;
-	float: left;
-	position: relative;
-	display: flex;
-	align-items: center;
-	text-align: center; 
-	padding: 15px 0;
-}
-
-.galeria img {
-	width: 90%
 }
 
 .second1, .second2 {
@@ -223,6 +188,53 @@ img {
 	display: inline-block;
 	color: #000;
 }
+
+.galeria img {
+	width: 90%
+}
+
+.paisajes {
+	background: #d5c75f;
+	width: 33.33%;
+	height: 250px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-align: center; 
+}
+
+.retratos{
+	background: #d5c75f;
+	width: 33.33%;
+	height: 440px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-align: center; 
+	padding: 15px 0;
+}
+
+/*efectos de Filter*/
+
+.land1, .portrait1 {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.land2, .land4, .land6, .portrait2, .portrait4, .portrait6 {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.land3, .portrait3 {
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
 
 /*Area de footer con 4 columnas*/
 
@@ -293,7 +305,10 @@ para las redes sociales en columna 3*/
 	color: #c4302b;
 }
 
-/*media queries */
+
+/* MEDIA QUERY */
+/*aplica para cuando la pantalla igual o menor a 900px*/
+
 
 @media (max-width: 900px) {
 	header {

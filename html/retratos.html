@@ -4,18 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Retratos</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="../imagenes/favicon/favicon.ico">
-	<link rel="stylesheet" href="../css/estilo.css" type="text/css">
+	<link rel="icon" type="image/x-icon" href="../imagenes/favicon/favicon.ico"> <!-- <= coloque un favicon -->
+	<link rel="stylesheet" href="../css/estilo.css" type="text/css">  <!-- estilos CCS -->
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script> <!-- Font-Awesome -->
 </head>
 
 
 <body>
 
 	<div class="contenido">
+		 
+		 <!--  Encabezado y menu de navegacion -->
 
 		<header>
 			<h1>Retratos</h1>
@@ -23,7 +25,7 @@
 				<ul>
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="paisajes.html">Paisajes</a></li>
-					<li><a href="#">Retratos</a></li>
+					<li><a href="#" class="actual">Retratos</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -32,20 +34,35 @@
 		<section>
 
 			<article class="main">
-				<div class="galeria retratos"><img src="../imagenes/retrato001.jpg" class="portrait1" alt=""></div>
-				<div class="galeria retratos"><img src="../imagenes/retrato002.jpg" class="portrait2" alt=""></div>
-				<div class="galeria retratos"><img src="../imagenes/retrato003.jpg" class="portrait3" alt=""></div>
-				<div class="galeria retratos"><img src="../imagenes/retrato004.jpg" class="portrait4" alt=""></div>
-				<div class="galeria retratos"><img src="../imagenes/retrato005.jpg" class="portrait5" alt=""></div>
-				<div class="galeria retratos"><img src="../imagenes/retrato006.jpg" class="portrait6" alt=""></div>
+				<!-- galeria de retratos con imagenes -->
+
+				<!-- intenté utilizar pseudo-classes para aplicar los filtros a las imagenes mas faci pero como el unico padre comun es main y las imagenes estan dentro de divs y clases individuales, no lo consegui. en lugar agregue clases a cada imagen para dar estilos -->
+
+				<div class="galeria retratos"><img src="../imagenes/retrato001.jpg" class="portrait1" alt="Retrato"></div>
+
+				<div class="galeria retratos"><img src="../imagenes/retrato002.jpg" class="portrait2" alt="Retrato"></div>
+
+				<div class="galeria retratos"><img src="../imagenes/retrato003.jpg" class="portrait3" alt="Retrato"></div>
+
+				<div class="galeria retratos"><img src="../imagenes/retrato004.jpg" class="portrait4" alt="Retrato"></div>
+
+				<div class="galeria retratos"><img src="../imagenes/retrato005.jpg" class="portrait5" alt="Retrato"></div>
+
+				<div class="galeria retratos"><img src="../imagenes/retrato006.jpg" class="portrait6" alt="Retrato"></div>
+
 			</article>
 
 		</section>
 
 
+<!--Pie de pagina con contacto, terminos, redes y copy -->
+
 		<footer>
 			<div class="pie">
 
+				<!-- contacto
+				la informacion es ficticia
+				por proposito de esta evaluacion -->
 				<div class="column1">
 					<h3>Ponte en contacto</h3>
 					<p><a href="mailto:info@fotogrfia.com">info@fotogrfia.com</a></p>
@@ -53,11 +70,13 @@
 					<p>Tél: 908 645 1047</p>
 				</div>
 
+				<!-- terminos. Me tome la libertad de crear un html con terminos y condiciones (de hecho son parrafos de LOREM IPSUM..) y el usuario puede navegar de vuelta a la pagina principal -->
 				<div class="column2">
 					<h3>Términos y <br>condiciones</h3>
 					<p>Por favor accede para conocer nuestros <a href="terminos.html"><br>términos y condiciones</a></p>
 				</div>
 
+				<!-- links a redes sociales; hice us de iconos de font-awesome. especialmente dificil fue implementar el icono de instagram sobre unfondo con colores en gradiente radial y coseguir este resultado. -->
 				<div class="column3">
 					<h3>Redes Sociales</h3>
 					<p>Sígueme en: </p>
@@ -72,11 +91,13 @@
 					</ul>
 				</div>
 
+				<!-- copyright -->
 				<div class="column4">
 					<h3>Derechos Reservados</h3>
 					<p>Geiner Castro</p>
 					<p>&copy; Copyright 2018</p>
 				</div>
+
 
 			</div>
 		</footer>
