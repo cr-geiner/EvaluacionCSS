@@ -156,6 +156,18 @@ img {
 	text-align: center; 
 }
 
+.land1, .portrait1 {
+	filter: blur(10px);
+}
+
+.land2, .land4, .land6, .portrait2, .portrait4, .portrait6 {
+	filter: grayscale(100%);
+}
+
+.land3, .portrait3 {
+	filter: sepia(90%);
+}
+
 .retratos{
 	background: #d5c75f;
 	width: 33.33%;
